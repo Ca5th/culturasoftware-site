@@ -1,7 +1,7 @@
 ---
-title: Hello World
+title: ¿Por qué hacer revisiones de código?
 date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+description: "Aún recuerdo la primera vez que me hicieron una sugerencia en una revisión de código. Qué ofensa, qué irrespeto, qué atrevimiento..."
 ---
 
 This is my first post on my new fake blog! How exciting!
