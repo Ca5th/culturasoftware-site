@@ -5,7 +5,7 @@ module.exports = {
       name: `Catherine Ramirez`,
       summary: `, ingeniera de software y residente del planeta tierra.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Cultura Software`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `kylemathews`,
