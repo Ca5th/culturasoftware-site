@@ -70,10 +70,18 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://culturasoftware.us3.list-manage.com/subscribe/post?u=655a0cac1cec99aea78150acc&amp;id=a829250835",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
