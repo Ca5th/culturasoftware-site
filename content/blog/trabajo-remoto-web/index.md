@@ -4,6 +4,8 @@ date: "2020-04-05T22:12:03.284Z"
 description: "Imagina esto: Te levantas a las 8 de la mañana, desayunas, tomas café, abres tu laptop y empiezas a trabajar. No tienes que madrugar, durar horas en el tráfico, o si quiera cambiarte la pijama..."
 ---
 
+![Laptop at the beach](Medium_laptop_beach.jpg)
+
 Imagina esto: Te levantas a las 8 de la mañana, desayunas, tomas café, abres tu laptop y empiezas a trabajar. No tienes que madrugar ni durar horas en el tráfico. Es más, ni siquiera tienes que cambiarte la pijama. Si esto te suena bien, probablemente te interese un trabajo remoto.
 
 Pero, ¿dónde encontrarlo?. Afortunadamente, cada vez más compañías optan por contratar empleados de todas partes del mundo, y hoy en día existen muchísimos websites donde puedes buscar.
