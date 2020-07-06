@@ -19,7 +19,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <EmailListForm />
+      {/* <EmailListForm /> */}
       <article>
         <header>
           <h1

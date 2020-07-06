@@ -1,33 +1,33 @@
 ---
-title: ¿Cómo hago una revisión de código que valga la pena?
-date: "2019-08-25T22:12:03.284Z"
-description: "Si leíste mi post anterior acerca de por qué hacer revisiones de código, sabes que fue un shock para mí la primera vez que participé en una..."
+title: How to do a good code review
+date: "2020-03-23T22:12:03.284Z"
+description: "Did you read my post “Why do code reviews?”?. If you did, you know that with time, I learned to appreciate and even want other people to review my code...."
 ---
 
-Si leíste mi post anterior acerca de por qué hacer revisiones de código, sabes que fue un shock para mí la primera vez que participé en una. Sin embargo, con el tiempo aprendí a apreciar y de hecho a pedir que revisaran mi código.
+Did you read my post “Why do code reviews?”?. If you did, you know that with time, I learned to appreciate and even want other people to review my code.
 
-Cuando me tocó a mí revisar el código de otros, la historia fue diferente. Muchas veces no tenía idea de qué comentar e ignoraba sin querer muchos problemas que había en el código. También como era nueva en esa empresa y no tenía tanta experiencia en general, no me sentía que estaba calificada para revisar el código de personas que tenían 10 años desarrollando software.
+When it was my turn to review other people’s code, the story was different. Many times I had no idea what to look for and, without knowing, ignored many problems in the code. I was also new to that company and didn’t have that much experience. This made me feel like I wasn’t qualified to review the code of people who had been doing this for 10 years.
 
-Ahora que tengo más experiencia, te voy a mencionar algunas cosas que me hubiera gustado saber y que pueden ayudar a cualquier programador que va a revisar código, sin importar su nivel de experiencia.
+Now that I have more experience, I want to tell you some things that I would have liked to know back then. These can help any developer that has to review code, regardless of their level of experience.
 
-### ¿En qué cosas me debo fijar en una revisión de código?
+### What should I look for in a code review?
 
-**Que el código sea fácil de entender.** Puedes entenderlo sin hacer preguntas? O sin buscar documentación en otro lado? (Obviamente si no conoces bien el lenguaje o el software quizás debas buscar documentación, pero mientras menos necesites hacerlo mejor).
+**That the code is easy to understand.** Can you understand it without asking too many questions? The developer that wrote the code won’t always be there, so it’s ideal if the code is as self-documenting as possible.
 
-**Que no haya errores.** Claro que no siempre vas a tener un conocimiento tan profundo del código que te permita encontrar cualquier bug posible con solo leer, pero dentro de lo posible, trata de “ejecutar” el código en tu mente mientras lo vas leyendo, asi te sera más fácil identificar las partes que causarían problemas.
+**That the code doesn’t introduce new bugs.** You might not always have such a deep knowledge of the code that it allows you to find any bug just by reading it. But, you can try, to the best of your ability, to “run” the code in your mind while you are reading it. This will make it easier to identify the parts that could cause problems.
 
-**Que los estándares establecidos por ustedes como equipo (o por el mismo lenguaje) se cumplan.** Puede parecer algo menor, pero cuando cada quien escribe código “a su manera” y no hay un número de estándares básicos que todos siguen, el código se ve desordenado e incoherente.
+**That it follows the industry best practices, and your team’s standards.** When everyone writes code “their way”, the codebase becomes messy and inconsistent. As a result, it becomes harder to understand.
 
-### ¿Cómo puedo hacer mejores revisiones de código?
+### How can I perform better code reviews?
 
-**Haz preguntas.** A veces hay problemas que son muy obvios, y es más práctico simplemente decir: “te recomiendo cambiar x por y”. Sin embargo, a veces hay decisiones que el desarrollador toma que tienen su razón de ser, y no necesariamente son evidentes cuando estás revisando el código. Por eso recomiendo hacer preguntas en lugar de dar recomendaciones directas. Esto también ayuda a que tus recomendaciones se vean menos crudas (y a no maltratar el ego de tus compañeros de equipo). Por ejemplo, en lugar de decir: Mueve este código a una clase aparte, puedes decir: ¿No sería mejor mover este código a una clase aparte? O ¿Por qué decidiste incluir este código aquí y no en otra clase? Esto da lugar a que si hay una razón detrás de esa decisión, la persona pueda explicarla, y si no, pues puede tomar tu sugerencia.
+**Ask questions.** Sometimes you will notice obvious problems, and it’s natural to point them out or recommend a change. But sometimes a developer makes a design decision with a particular reason in mind. That reason is not always obvious when you are reviewing the code. In those cases, I recommend asking questions rather than giving direct recommendations. For example, instead of saying: “Move this code to a separate class”, you could say: “Wouldn’t it be better to move this code to a separate class?” Or, “Why did you include this code here and not in a separate class?” As a result, if there is a reason behind that decision, the person can explain it. If not, they can take your suggestion.
 
-**Si vas a señalar un problema, ofrece una posible solución.** No vale de nada decir “esto está mal”, “este código no se entiende”, si no vas a ofrecer una alternativa. Procura siempre dar al menos una opción. Si sabes que algo está mal, o que podría estar mejor, es fácil pensar en qué harías diferente y escribirlo. Recuerda que el objetivo es mejorar el código, no criticar porque sí.
+**If you’re pointing out a problem, offer a solution.** It is not very helpful to say “this is wrong” or “I can’t understand this code” if you will not offer an alternative. If you know something could be better, take a little time to think about how you would change it and mention it. Remember that the goal is to improve the code, not to be a critic.
 
-**Familiarízate con el contexto del cambio.** Si revisas el código sin tener idea de su objetivo, no vas a poder evaluar si efectivamente funciona para ese fin. Por eso, antes de examinar el código, infórmate acerca de los requerimientos del cambio o el problema que se reportó. Eso te dará una mejor idea de lo que se supone que el código haga y podrás evaluarlo en base a eso.
+**Become familiar with the context of change.** If you review a code change while not knowing ​​its purpose, you cannot assess whether it works. Before you examine the code, look up the requirements. If it’s a bug fix, look up the description of the reported problem. That will give you a better idea of ​​what the code should do, and you can evaluate it based on that.
 
-**Sé imparcial.** Es fácil pensar que debes dedicarle más tiempo a revisar el código de alguien que es nuevo en el equipo o que no tiene muchos años de experiencia, y menos tiempo a la persona que piensas que es muy buen programador. En realidad he cometido errores o he pasado cosas por alto por no prestarle tanta atención al código de alguien con mucha experiencia. No importa quién sea el autor del código, puede tener errores o puntos para mejorar, y aún a la persona con más conocimiento se le puede escapar algo.
+**Be impartial.** It’s easy to think you should spend more time reviewing the code of a junior developer versus that of an experienced developer. I have missed things before by not being that thorough when reviewing the code of a senior developer. No matter who is the author of the code, there might be mistakes or points for improvement.
 
-### En Conclusión
+### In conclusion...
 
-Lo más importante en una revisión de código es la atención a los detalles y abordar la tarea con la actitud correcta. Puede sonar negativo, pero la mejor manera de realizar una revisión de código es asumiendo que hay problemas y que es tu trabajo encontrarlos.
+The most important thing in a code review is attention to detail. The second one is approaching the task with the right attitude. The best way to perform a code review is to assume that there are problems, and that it is your job to find them.
