@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Cultura Software`,
+    title: `Catherine Ramirez`,
     author: {
-      name: `Catherine Ramirez`,
-      summary: `, ingeniera de software y residente del planeta tierra.`,
+      name: `Catherine Ramirez,`,
+      summary: `Software Engineer. Machine learning student. Living in Toronto`,
     },
     description: `Cultura Software`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
