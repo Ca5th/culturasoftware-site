@@ -4,6 +4,8 @@ date: "2020-07-12T12:48:37.121Z"
 description: "I had to admit it: I had a productivity problem..."
 ---
 
+![Photo of an hourglass](../../assets/hourglass-time-hours-sand.jpeg "Logo Title Text 1")
+
 I had to admit it: I had a productivity problem. It was not like it was ruining my whole life, I still got all my work done on time, and it was not like I was incapable of focusing on a task.
 
 However, completing a task was sometimes taking me way more than it should, either because I got distracted or simply started doing something else.
