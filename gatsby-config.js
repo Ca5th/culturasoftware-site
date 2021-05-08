@@ -3,10 +3,10 @@ module.exports = {
     title: `Catherine Ramirez`,
     author: {
       name: `Catherine Ramirez,`,
-      summary: `Software Engineer living in Toronto`,
+      summary: `A Software Engineer writing about software things. | Toronto.`,
     },
     description: `Cultura Software`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://cathdoestech.com`,
     social: {
       twitter: `kylemathews`,
     },
