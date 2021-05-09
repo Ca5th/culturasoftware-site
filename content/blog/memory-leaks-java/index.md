@@ -6,7 +6,7 @@ description: "A memory leak happens when an application is no longer using certa
 
 Garbage collection is the process by which the Java Virtual Machine determines which objects are no longer in use in an application, and proceeds to remove them from memory so that it can be recycled for other uses. Based on that, you might think that it’s impossible to have memory leaks in Java, yet here we are. 
 
-A memory leak happens when an application is no longer using certain objects, but they’re still being referenced. Because of this, they are not eligible to be removed by the garbage collector. This could eventually lead to an OutOfMemoryError, which is impossible to recover from.
+A memory leak happens when an application is no longer using certain objects, but they’re still being referenced. Because of this, they are not eligible to be removed by the garbage collector. As time goes on, and the application continues running, more and more objects like this get created until the available memory fills up. This could eventually lead to an OutOfMemoryError, which is impossible to recover from.
 
 Memory leaks are some of the trickiest issues in Java Applications. They can be easy to miss and hard to detect. 
 
@@ -67,7 +67,7 @@ Now let’s look at the same example, but this time we’ll declare the List as 
         }
     }
 
-In this case, the List will be used and then properly discarded, and the garbage collector will be able to recover the memory it was using. 
+In this case, the List will be used and then properly discarded, and the garbage collector will be able to recover the memory it was using. Because it is a local variable, when we reach the point the code where the variable is no longer being used, the garbace collector determines that it can free up the memory.  
 
 #### How to prevent it? 
 
@@ -97,9 +97,9 @@ Take a look at this example:
             unclosedStream.readFile();
             System.out.println("Done with reading file");
         }
-}
+    }
 
-Here the memory usage will gradually increase, and it won’t be released even after you’re done reading the file.
+As we read the file, the memory usage will gradually increase. Then, because the BufferedReader is never closed, the memory won’t be released even after you’re done reading the file.
 
 This can also happen with connections:
 
@@ -109,7 +109,6 @@ This can also happen with connections:
             URL url = new URL("ftp://fakeaddr.net");
             URLConnection urlConn = url.openConnection();
             InputStream inputStream = urlConn.getInputStream();
-
         }
 
         public static void main(String[] args) {
@@ -119,7 +118,7 @@ This can also happen with connections:
         }
     }
 
-Here the URLConnection will remain open and the result will be a memory leak.
+As you can see, the URLConnection is never closed, so it remains open and holding memory resources.
 
 #### How to prevent it? 
 
@@ -127,12 +126,14 @@ Simple, always remember to either:
 - Close streams manually
 - Use try with resources, introduced in Java 8:
 
+```
     try (BufferedReader br = new BufferedReader(
 			new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8))) {
 		// whatever else you wanna do
 	} catch (IOException e) {
 		e.printStackTrace();
 	}
+```
 
 This will automatically close the BufferedReader at the end of the try statement. 
 
@@ -173,7 +174,7 @@ You can do this by enabling the -verbose:gc parameter of the JVM configuration o
 
 #### 3. Benchmarking 
 
-Benchmarking allows you to measure the performance of sections of your code. That way you can constantly monitor it to find out if any particular method is particularly slow.
+Benchmarking allows you to measure the performance of sections of your code. That way you can constantly monitor it to find out if any particular method is particularly slow. If you want to learn more about benchmarking in Java, [follow this link](https://belief-driven-design.com/java-benchmarks-with-jmh-dc58837c0b3/). 
 
 #### 4. Profiling
 
@@ -183,4 +184,4 @@ A Java profiler is a tool that monitors JVM level operations, including garbage 
 
 This is generally a good practice, but if you’re trying to find memory leaks, review the code closely, and try to get another set of eyes to review it as well. You might notice some of the issues I mentioned here.
 
-I hoped this helped you learn a little bit more about memory leaks and how to avoid them. If you’re currently stuck trying to find one of those, good luck bestie!
+I hope this helped you learn a little bit more about memory leaks and how to avoid them. If you’re currently stuck trying to find one of those, good luck bestie!
