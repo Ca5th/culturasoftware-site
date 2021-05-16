@@ -1,7 +1,7 @@
 ---
 title: Humans, not computers.
 date: "2021-05-16T11:00:37.121Z"
-description: "A memory leak happens when an application is no longer using certain objects, but they’re still being referenced...."
+description: "I remember taking my first computer science class, when code readability was not even a known concept to me. I would use variable names like a,b and x. I would create a Java program and pack all of my code in one class."
 ---
 
 The other day I was reading [this](https://shopify.engineering/building-mental-models) post by [Hammad Khalid](https://shopify.engineering/search?link_search=true&q=Hammad+Khalid), and in it he mentioned what I think is a very important principle in software development: Write for humans, not for computers.
