@@ -4,7 +4,7 @@ date: "2021-06-27T11:00:37.121Z"
 description: "I remember taking my first computer science class, when code readability was not even a known concept to me. I would use variable names like a,b and x..."
 ---
 
-I was 17 years old when I decided to switch majors to Computer Science, without Knowing exactly what it was or what I was in for. All I knew was that I liked HTML because of my extensive experience customizing my MySpace profile.
+I was 17 years old when I decided to switch majors to Computer Science, without knowing exactly what it was or what I was in for. All I knew was that I liked HTML because of my extensive experience customizing my MySpace profile.
 
 Today, years later, I’m reflecting on what I would do if I was learning to code from scratch. What would I do with the tools that are available today?
 
@@ -18,7 +18,7 @@ What I think it’s more important is what you learn and the order in which you 
 
 ### Basics
 
-The first thing you should learn is the basics. Pick any language that you’re curious about and learn about.
+The first thing you should learn is the basics. Pick any language that you’re curious about and learn about:
 
 - Variables
 - Data types
@@ -47,7 +47,7 @@ Be warned that a lot of OOP resources start talking about animals and houses to 
 
 When you first start learning algorithms and data structures it might seem like meaningless theory, but they actually help you develop your problem solving skills.
 
-In any given program you basically have data and a set of instructions on what to do with this data. Learning data structures will make it easier to organize the data in a way that makes sense and makes its handling easier. And learning algorithms will help you figure out the most efficient way to handle data to get the result that you want.
+In any given program you basically have data and a set of instructions that do something with this data. Learning data structures will make it easier to organize the data in a way that makes sense and makes its handling easier. And learning algorithms will help you figure out the most efficient way to handle data to get the result that you want.
 
 ### Project
 
@@ -65,13 +65,12 @@ Of course, there will be many times when you won’t know what to do. That’s p
 
 There’s this stage when you’re learning something, when you realize: “wow, this road is going to be way longer than I thought”. Don’t get discouraged. It’s normal to feel overwhelmed at some point, but just keep working on it and you’ll see results.
 
-- Mindset
-  This kinda relates to the previous tip. You’re going to get stuck at some point, that is a factZ Expect it so that you’re not frustrated when it happens. See getting stuck as part of the learning process.
+- Mindset.
+  This kinda relates to the previous tip. You’re going to get stuck at some point, that is a Expect it so that you’re not frustrated when it happens. See getting stuck as part of the learning process.
 
 Programming is mostly about problem solving so by encountering roadblocks you’re actually practicing one of the most important skills you need to have as a developer.
 
-- Google is your friend
-  To be a programmer you have to be a lifelong learner, because there will always be something you don’t know.
+- Google is your friend. To be a programmer you have to be a lifelong learner, because there will always be something you don’t know.
 
   Luckily, every popular programming language has a big online community, and you can find an answer for virtually any question you have. So when you’re stuck, or if you’re not sure about something, just look it up online.
 
