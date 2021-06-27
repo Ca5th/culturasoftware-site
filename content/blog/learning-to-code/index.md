@@ -1,7 +1,7 @@
 ---
 title: How would I learn coding today?
 date: "2021-06-27T11:00:37.121Z"
-description: "I remember taking my first computer science class, when code readability was not even a known concept to me. I would use variable names like a,b and x..."
+description: "I was 17 years old when I decided to switch majors to Computer Science, without knowing exactly what it was or what I was in for..."
 ---
 
 I was 17 years old when I decided to switch majors to Computer Science, without knowing exactly what it was or what I was in for. All I knew was that I liked HTML because of my extensive experience customizing my MySpace profile.
